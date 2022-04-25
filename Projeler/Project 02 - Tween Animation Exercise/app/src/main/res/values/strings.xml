@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TweenAnimation</string>
+    <string name="rotate">Rotate</string>
+    <string name="scale">Scale</string>
+    <string name="move">Move</string>
+    <string name="all">All</string>
+    <string name="blink">Blink</string>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rotateButton"
+            style="@style/but_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="292dp"
+            android:text="@string/rotate"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/alphaButton"
+            style="@style/but_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/secondaryLightColor"
+            android:text="@string/blink"
+            app:layout_constraintBaseline_toBaselineOf="@+id/rotateButton"
+            app:layout_constraintStart_toEndOf="@+id/rotateButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/scaleButton"
+            style="@style/but_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:backgroundTint="@color/secondaryLightColor"
+            android:text="@string/scale"
+            app:layout_constraintBaseline_toBaselineOf="@+id/alphaButton"
+            app:layout_constraintStart_toEndOf="@+id/alphaButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/moveButton"
+            style="@style/but_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/secondaryLightColor"
+            android:text="@string/move"
+            app:layout_constraintBaseline_toBaselineOf="@+id/scaleButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.833"
+            app:layout_constraintStart_toEndOf="@+id/scaleButton" />
+
+        <Button
+            android:id="@+id/allButton"
+            style="@style/but_style"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+            android:background="@drawable/button_shape"
+            android:text="@string/all"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/moveButton"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/pink" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout></layout>

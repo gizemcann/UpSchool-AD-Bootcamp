@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MyProject</string>
+    <string name="lets_start">Let’s Start!</string>
+    <string name="start_now">Start Now</string>
+    <string name="learn_at_home">Learn at home!</string>
+    <string name="get_unlimited_access">Get unlimited access!</string>
+    <string name="go_premium">Go Premium</string>
+    <string name="_11_99">$11.99</string>
+    <string name="_11_99_per_month">$11.99 per month</string>
+    <string name="_143_99_per_year">$143.99 per year</string>
+    <string name="_4_99">$4.99</string>
+    <string name="_4_99_per_month">$4.99 per month</string>
+    <string name="_59_99_per_year">$59.99 per year</string>
+    <string name="yearly">Yearly</string>
+    <string name="monthly">Monthly</string>
+    <string name="_143_99">$143.99</string>
+    <string name="_59_99">$59.99</string>
+    <string name="per_year">per_year</string>
+    <string name="per_month">per_month</string>
+
+</resources>

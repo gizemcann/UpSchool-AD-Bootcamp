@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PremiumActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="309dp"
+        android:layout_height="278dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic__llustration3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/EntryTitleStyle"
+        android:layout_width="208dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/get_unlimited_access"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/monthPrice"
+        android:layout_width="156dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_monthly_rectangle_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/monthLabel"
+        android:layout_width="54dp"
+        android:layout_height="18dp"
+        android:background="@drawable/radius"
+
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="@string/monthly"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/monthPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/monthPrice"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <TextView
+        android:id="@+id/yearPrice"
+        android:layout_width="156dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/ic_monthly_rectangle_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/yearLabel"
+        android:layout_width="44dp"
+        android:layout_height="18dp"
+        android:background="@drawable/pinkround"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="@string/yearly"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/yearPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/yearPrice"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <Button
+        android:id="@+id/premiumbutton"
+        android:layout_width="191dp"
+        android:layout_height="58dp"
+        android:backgroundTint="#2C2B47"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="@string/go_premium"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yearPrice"
+        app:layout_constraintVertical_bias="0.507" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="57dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/_11_99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/monthPrice"
+        style="@style/PremimumPriceStyle" />
+
+    <TextView
+        android:id="@+id/textView7"
+        style="@style/PremiumSubtitleStyle"
+        android:text="@string/_11_99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView8"
+        style="@style/PremiumSubtitleStyle"
+        android:layout_width="40dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/_143_99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="51dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="120dp"
+        android:text="@string/_4_99"
+        style="@style/PremimumPriceStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/yearPrice" />
+
+    <TextView
+        android:id="@+id/textView10"
+        style="@style/PremiumSubtitleStyle"
+        android:layout_width="40dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="128dp"
+        android:text="@string/_4_99"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        style="@style/PremiumSubtitleStyle"
+        android:layout_width="40dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="128dp"
+        android:text="@string/_59_99"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textmonth"
+        style="@style/perStyle"
+        android:text="per_month"
+        app:layout_constraintBottom_toBottomOf="@+id/monthPrice"
+        app:layout_constraintEnd_toStartOf="@+id/yearPrice"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/monthPrice"
+        app:layout_constraintVertical_bias="0.591" />
+
+    <TextView
+        android:id="@+id/textyear"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:text="per_year"
+        app:layout_constraintBottom_toBottomOf="@+id/monthPrice"
+        app:layout_constraintEnd_toEndOf="@+id/monthPrice"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/monthPrice"
+        app:layout_constraintVertical_bias="0.808"
+        style="@style/perStyle"/>
+
+    <TextView
+        android:id="@+id/textView12"
+        style="@style/perStyle"
+        android:layout_width="70dp"
+        android:layout_height="16dp"
+        android:text="per month"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="@+id/yearPrice"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/yearPrice"
+        app:layout_constraintVertical_bias="0.898" />
+
+    <TextView
+        android:id="@+id/textView13"
+        style="@style/perStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginBottom="25dp"
+        android:text="per year"
+        app:layout_constraintBottom_toBottomOf="@+id/yearPrice"
+        app:layout_constraintEnd_toEndOf="@+id/yearPrice"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/yearPrice" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
