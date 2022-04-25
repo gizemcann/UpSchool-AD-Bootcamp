@@ -27,5 +27,7 @@ The file must have a single root element: either an `<alpha>`, `<scale>`, `<tran
 
 I created a project using animation elements (alpha, <scale>, translate, rotate).
 In order for us to see the animation, we need to use the property of the `<objectAnimator>` element, which allows to animate a certain property of an object for a certain period of time. `android:duration=" duration of animation in milliseconds(int)"`
+  
+  <p align="center"> <img src="https://user-images.githubusercontent.com/42353797/165071479-b5683a40-2b0b-4ed3-af3d-cd9bd210af05.gif" /></p>
 
-![tweenAnimation](https://user-images.githubusercontent.com/42353797/165071479-b5683a40-2b0b-4ed3-af3d-cd9bd210af05.gif)
+
